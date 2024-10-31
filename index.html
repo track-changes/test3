@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Riwatex Game. Play and Earn RTX token</title>
+  <meta name="theme-color" content="#141414">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, viewport-fit=cover, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link link rel="shortcut icon" href="./favicon.svg" type="image/x-icon">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link href="css/style.min.css" type="text/css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="js/vendor.min.js" defer></script>
+  <script src="js/app.min.js" defer></script>
+</head>
+
+<body class="body">
+  <div class="wrapper">
+    <header class="header">
+      <div class="container header__container">
+        <a class="header__logo" href="/">
+          <img src="img/icons/logo.svg" alt="Riwatex">
+        </a>
+        <nav class="header__burger js-burger">
+          <ul class="header__links">
+            <li class="header__link">
+              <a href="#tokenomics">Tokenomics</a>
+            </li>
+            <li class="header__link">
+              <a href="#referralr">Referral</a>
+            </li>
+            <li class="header__link">
+              <a href="#blog">Blog</a>
+            </li>
+            <li class="header__link">
+              <a href="#docs">Docs</a>
+            </li>
+            <li class="header__trade">
+              <a href="https://t.me/riwatex_app_bot" target="_blank">
+                <img src="img/icons/rtx.svg" alt="RTX">
+                <span>Trade</span>
+              </a>
+            </li>
+            <li class="header__socials">
+              <a class="header__social" href="https://t.me/riwatex" target="_blank"></a>
+              <a class="header__social header__social--x" href="https://x.com/RiwatexApp" target="_blank"> </a>
+            </li>
+            <li class="header__trade header__trade--desktop">
+              <a href="https://t.me/riwatex_app_bot" target="_blank">
+                <img src="img/icons/rtx.svg" alt="RTX">
+                <span>Trade</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <button class="header__burger-btn js-burgerBtn" type="button"></button>
+      </div>
+    </header>
+    <main class="main">
+      <section class="descriptor">
+        <div id="stars-container">
+          <div id="stars"></div>
+          <div id="stars2"></div>
+          <div id="stars3"></div>
+        </div>
+        <div class="container">
+          <h2 class="descriptor__title">RISE OR FALL</h2>
+          <strong class="descriptor__subtitle">The choice is yours!</strong>
+          <p class="descriptor__text">Use the RTXM token to participate in predictions, increase your earnings, and unlock exclusive features</p>
+          <div class="descriptor__motivation">
+            <a class="descriptor__link" href="https://t.me/riwatex_app_bot" target="_blank">Trade in Telegram</a>
+            <div class="descriptor__users">
+              <div class="descriptor__avatars">
+                <div class="descriptor__avatar">
+                  <img src="img/icons/memoji1.svg" alt="user">
+                </div>
+                <div class="descriptor__avatar">
+                  <img src="img/icons/memoji2.svg" alt="user">
+                </div>
+                <div class="descriptor__avatar">
+                  <img src="img/icons/memoji3.svg" alt="user">
+                </div>
+                <div class="descriptor__avatar">
+                  <img src="img/icons/memoji4.svg" alt="user">
+                </div>
+                <div class="descriptor__avatar">
+                  <img src="img/icons/memoji5.svg" alt="user">
+                </div>
+              </div>
+              <div class="descriptor__count">
+                <p>Будь первым</p>
+                <span>Зарабатывай уже сейчас!</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section token" id="token">
+        <div class="container">
+          <div class="token-head">
+            <h2 class="section__title">Token RTXM</h2>
+            <a class="token-head__link" href="#">RTXM/TON </a>
+          </div>
+          <div class="title-lines">
+            <span> </span>
+            <span> </span>
+          </div>
+          <div class="token__text">Pay for predictions with RTXM and get boosted odds</div>
+          <div class="token__charts">
+            <div class="token__chart">
+              <div class="token__chart-head">
+                <div class="token__chart-currency">
+                  <div class="token__chart-img">
+                    <img src="img/icons/btc.svg" alt="BTC">
+                  </div>
+                  <div class="token__chart-name">
+                    <b>BTC</b>
+                    <span>Bitcoin </span>
+                  </div>
+                </div>
+                <div class="token__chart-info">
+                  <div class="token__chart-price">63 557,82</div>
+                  <div class="token__chart-change">
+                    <span>2 211,24</span>
+                    <span>(3,33%) </span>
+                  </div>
+                </div>
+              </div>
+              <div class="token__chart-wrap" id="chart1"></div>
+              <div class="token__odds">
+                <div class="token__odds-box">
+                  <div class="token__odds-label">Odds:</div>
+                  <div class="token__odds-value">1.88x</div>
+                </div>
+                <div class="token__odds-box">
+                  <div class="token__odds-label">Odds RTXM:</div>
+                  <div class="token__odds-value token__odds-value--fire">1.98x</div>
+                </div>
+              </div>
+            </div>
+            <div class="token__chart">
+              <div class="token__chart-head">
+                <div class="token__chart-currency">
+                  <div class="token__chart-img">
+                    <img src="img/icons/ton.svg" alt="TON">
+                  </div>
+                  <div class="token__chart-name">
+                    <b>TON</b>
+                    <span>Toncoin </span>
+                  </div>
+                </div>
+                <div class="token__chart-info">
+                  <div class="token__chart-price">5,82</div>
+                  <div class="token__chart-change">
+                    <span>0,04</span>
+                    <span>(3,33%)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="token__chart-wrap" id="chart2"></div>
+              <div class="token__odds">
+                <div class="token__odds-box">
+                  <div class="token__odds-label">Odds:</div>
+                  <div class="token__odds-value">1.88x</div>
+                </div>
+                <div class="token__odds-box">
+                  <div class="token__odds-label">Odds RTXM:</div>
+                  <div class="token__odds-value token__odds-value--fire">1.98x</div>
+                </div>
+              </div>
+            </div>
+            <div class="token__chart">
+              <div class="token__chart-head">
+                <div class="token__chart-currency">
+                  <div class="token__chart-img">
+                    <img src="img/icons/eth.svg" alt="ETH">
+                  </div>
+                  <div class="token__chart-name">
+                    <b>ETH</b>
+                    <span>Ethereum </span>
+                  </div>
+                </div>
+                <div class="token__chart-info">
+                  <div class="token__chart-price">2 604,82</div>
+                  <div class="token__chart-change">
+                    <span>83,24</span>
+                    <span>(3,33%)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="token__chart-wrap" id="chart3"></div>
+              <div class="token__odds">
+                <div class="token__odds-box">
+                  <div class="token__odds-label">Odds:</div>
+                  <div class="token__odds-value">1.88x</div>
+                </div>
+                <div class="token__odds-box">
+                  <div class="token__odds-label">Odds RTXM:</div>
+                  <div class="token__odds-value token__odds-value--fire">1.98x</div>
+                </div>
+              </div>
+            </div>
+            <div class="token__chart">
+              <div class="token__chart-head">
+                <div class="token__chart-currency">
+                  <div class="token__chart-img">
+                    <img src="img/icons/pepe.svg" alt="PEPE">
+                  </div>
+                  <div class="token__chart-name">
+                    <b>PEPE</b>
+                    <span>PEPE </span>
+                  </div>
+                </div>
+                <div class="token__chart-info">
+                  <div class="token__chart-price">2 604,82</div>
+                  <div class="token__chart-change">
+                    <span>83,24</span>
+                    <span>(3,33%)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="token__chart-wrap" id="chart4"></div>
+              <div class="token__odds">
+                <div class="token__odds-box">
+                  <div class="token__odds-label">Odds:</div>
+                  <div class="token__odds-value">1.88x</div>
+                </div>
+                <div class="token__odds-box">
+                  <div class="token__odds-label">Odds RTXM:</div>
+                  <div class="token__odds-value token__odds-value--fire">1.98x</div>
+                </div>
+              </div>
+            </div>
+            <div class="token__chart">
+              <div class="token__chart-head">
+                <div class="token__chart-currency">
+                  <div class="token__chart-img">
+                    <img src="img/icons/not.svg" alt="NOT">
+                  </div>
+                  <div class="token__chart-name">
+                    <b>NOT</b>
+                    <span>Notcoin </span>
+                  </div>
+                </div>
+                <div class="token__chart-info">
+                  <div class="token__chart-price">63 557,82</div>
+                  <div class="token__chart-change">
+                    <span>2 211,24</span>
+                    <span>(3,33%)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="token__chart-wrap" id="chart5"></div>
+              <div class="token__odds">
+                <div class="token__odds-box">
+                  <div class="token__odds-label">Odds:</div>
+                  <div class="token__odds-value">1.88x</div>
+                </div>
+                <div class="token__odds-box">
+                  <div class="token__odds-label">Odds RTXM:</div>
+                  <div class="token__odds-value token__odds-value--fire">1.98x</div>
+                </div>
+              </div>
+            </div>
+            <div class="token__chart">
+              <div class="token__chart-head">
+                <div class="token__chart-currency">
+                  <div class="token__chart-img">
+                    <img src="img/icons/dogs.svg" alt="DOGS">
+                  </div>
+                  <div class="token__chart-name">
+                    <b>DOGS</b>
+                    <span>DOGS </span>
+                  </div>
+                </div>
+                <div class="token__chart-info">
+                  <div class="token__chart-price">63 557,82</div>
+                  <div class="token__chart-change">
+                    <span>2 211,24</span>
+                    <span>(3,33%)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="token__chart-wrap" id="chart6"></div>
+              <div class="token__odds">
+                <div class="token__odds-box">
+                  <div class="token__odds-label">Odds:</div>
+                  <div class="token__odds-value">1.88x</div>
+                </div>
+                <div class="token__odds-box">
+                  <div class="token__odds-label">Odds RTXM:</div>
+                  <div class="token__odds-value token__odds-value--fire">1.98x</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="token__link" href="#">Trade in Telegram</a>
+          <div class="token__description">
+            <div class="token__description-title">Use your<span>TON</span>to place predictions</div>
+            <div class="token__description-text">Use your TON to&nbsp;place predictions and multiply your tokens by&nbsp;accurately forecasting cryptocurrency price movements. Take advantage of&nbsp;market opportunities and watch your portfolio grow!</div>
+          </div>
+        </div>
+      </section>
+      <section class="section tokenomics" id="tokenomics">
+        <div class="container">
+          <div class="tokenomics-head">
+            <h2 class="section__title">Tokenomics</h2>
+            <div class="tokenomics-icon">
+              <img src="img/icons/rtxm-logo.png" alt="">
+            </div>
+          </div>
+          <div class="title-lines">
+            <span> </span>
+            <span> </span>
+          </div>
+          <div class="tokenomics-indicators">
+            <div class="tokenomics__indicator js-indicator" data-indicator="path-community">
+              <div class="tokenomics__indicator-color" style="background-color: #85E047"> </div>
+              <div class="tokenomics__indicator-box">
+                <div class="tokenomics__indicator-name">Community</div>
+                <div class="tokenomics__indicator-value">20%</div>
+              </div>
+            </div>
+            <div class="tokenomics__indicator js-indicator" data-indicator="path-liquidity">
+              <div class="tokenomics__indicator-color" style="background-color: #F56476"></div>
+              <div class="tokenomics__indicator-box">
+                <div class="tokenomics__indicator-name">Liquidity</div>
+                <div class="tokenomics__indicator-value">20%</div>
+              </div>
+            </div>
+            <div class="tokenomics__indicator js-indicator" data-indicator="path-advisors">
+              <div class="tokenomics__indicator-color" style="background-color: #B9CFD4"> </div>
+              <div class="tokenomics__indicator-box">
+                <div class="tokenomics__indicator-name">Advisors</div>
+                <div class="tokenomics__indicator-value">10%</div>
+              </div>
+            </div>
+            <div class="tokenomics__indicator js-indicator" data-indicator="path-treasury">
+              <div class="tokenomics__indicator-color" style="background-color: #F4A261"></div>
+              <div class="tokenomics__indicator-box">
+                <div class="tokenomics__indicator-name">Treasury</div>
+                <div class="tokenomics__indicator-value">25%</div>
+              </div>
+            </div>
+            <div class="tokenomics__indicator js-indicator" data-indicator="path-airdrop">
+              <div class="tokenomics__indicator-color" style="background-color: #6F58C9"> </div>
+              <div class="tokenomics__indicator-box">
+                <div class="tokenomics__indicator-name">Airdrop</div>
+                <div class="tokenomics__indicator-value">5%</div>
+              </div>
+            </div>
+            <div class="tokenomics__indicator js-indicator" data-indicator="path-holders">
+              <div class="tokenomics__indicator-color" style="background-color: #3372C7"> </div>
+              <div class="tokenomics__indicator-box">
+                <div class="tokenomics__indicator-name">Holders</div>
+                <div class="tokenomics__indicator-value">20%</div>
+              </div>
+            </div>
+          </div>
+          <div class="tokenomics-diagram">
+            <svg id="diagram" width="360" height="360" viewBox="0 0 360 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M180 8C180 3.58172 183.584 -0.0185541 187.998 0.177706C223.187 1.74234 257.21 13.6041 285.801 34.3769C314.393 55.1498 336.188 83.8422 348.55 116.825C350.1 120.963 347.784 125.484 343.582 126.849L273.204 149.716C269.002 151.082 264.521 148.764 262.788 144.699C256.422 129.768 246.113 116.787 232.901 107.188C219.689 97.5895 204.157 91.7961 187.99 90.3553C183.589 89.9631 180 86.4183 180 82L180 8Z" fill="#85E047" stroke="#151515" stroke-width="8" mask="url(#path-1-inside-1_1743_1128)" />
+              <path id="path-community" class="js-pathBig" d="M180 8C180 3.58172 183.584 -0.0185541 187.998 0.177706C223.187 1.74234 257.21 13.6041 285.801 34.3769C314.393 55.1498 336.188 83.8422 348.55 116.825C350.1 120.963 347.784 125.484 343.582 126.849L190.472 176.597C185.303 178.277 180 174.424 180 168.989L180 8Z" fill="#85E047" stroke="#151515" stroke-width="8" mask="url(#path-2-inside-2_1743_1128)" />
+              <path d="M343.582 126.849C347.784 125.484 352.315 127.78 353.493 132.038C362.169 163.422 362.169 196.578 353.493 227.962C352.315 232.22 347.784 234.516 343.582 233.151L273.204 210.284C269.002 208.918 266.739 204.41 267.726 200.103C270.758 186.873 270.758 173.127 267.726 159.897C266.739 155.59 269.002 151.082 273.204 149.716L343.582 126.849Z" fill="#B9CFD4" stroke="#151515" stroke-width="8" mask="url(#path-3-inside-3_1743_1128)" />
+              <path id="path-advisors" class="hide js-pathBig" d="M343.582 126.849C347.784 125.484 352.315 127.78 353.493 132.038C362.169 163.422 362.169 196.578 353.493 227.962C352.315 232.22 347.784 234.516 343.582 233.151L203.416 187.608C196.046 185.214 196.046 174.786 203.416 172.392L343.582 126.849Z" fill="#B9CFD4" stroke="#151515" stroke-width="8" mask="url(#path-4-inside-4_1743_1128)" />
+              <path d="M343.582 233.151C347.784 234.516 350.1 239.037 348.55 243.174C343.801 255.844 337.639 267.938 330.18 279.227C327.744 282.913 322.725 283.696 319.151 281.099L259.284 237.603C255.709 235.006 254.951 230.019 257.22 226.228C259.323 222.716 261.183 219.065 262.788 215.3C264.521 211.236 269.002 208.918 273.204 210.284L343.582 233.151Z" fill="#6F58C9" stroke="#151515" stroke-width="8" mask="url(#path-5-inside-5_1743_1128)" />
+              <path id="path-airdrop" class="hide js-pathBig" d="M343.582 233.151C347.784 234.516 350.1 239.037 348.55 243.174C343.801 255.844 337.639 267.938 330.18 279.227C327.744 282.913 322.725 283.696 319.151 281.099L220.863 209.689C213.493 204.334 219.374 192.793 228.038 195.608L343.582 233.151Z" fill="#6F58C9" stroke="#151515" stroke-width="8" mask="url(#path-6-inside-6_1743_1128)" />
+              <path d="M319.151 281.099C322.725 283.696 323.531 288.712 320.778 292.167C298.829 319.716 269.234 340.269 235.623 351.19C202.012 362.111 165.989 362.879 132.038 353.493C127.78 352.315 125.484 347.784 126.849 343.582L149.716 273.204C151.082 269.002 155.59 266.739 159.897 267.726C175.719 271.352 192.28 270.642 207.812 265.595C223.343 260.549 237.159 251.389 247.828 239.156C250.732 235.826 255.709 235.006 259.284 237.603L319.151 281.099Z" fill="#F56476" stroke="#151515" stroke-width="8" mask="url(#path-7-inside-7_1743_1128)" />
+              <path id="path-liquidity" class="hide js-pathBig" d="M319.151 281.099C322.725 283.696 323.531 288.712 320.778 292.167C298.829 319.716 269.234 340.269 235.623 351.19C202.012 362.111 165.989 362.879 132.038 353.493C127.78 352.315 125.484 347.784 126.849 343.582L176.597 190.472C178.277 185.303 184.511 183.278 188.908 186.472L319.151 281.099Z" fill="#F56476" stroke="#151515" stroke-width="8" mask="url(#path-8-inside-8_1743_1128)" />
+              <path d="M126.849 343.582C125.484 347.784 120.962 350.1 116.825 348.55C74.805 332.802 40.0784 301.872 19.6188 261.718C-0.840762 221.564 -5.45119 175.29 6.5071 132.039C7.68452 127.78 12.2162 125.484 16.4183 126.849L86.7965 149.716C90.9985 151.082 93.2606 155.591 92.2736 159.897C87.577 180.389 90.1887 201.977 99.8094 220.859C109.43 239.741 125.36 254.543 144.699 262.788C148.763 264.521 151.082 269.002 149.716 273.204L126.849 343.582Z" fill="#F4A261" stroke="#151515" stroke-width="8" mask="url(#path-9-inside-9_1743_1128)" />
+              <path id="path-treasury" class="hide js-pathBig" d="M126.849 343.582C125.484 347.784 120.962 350.1 116.825 348.55C74.805 332.802 40.0784 301.872 19.6188 261.718C-0.840762 221.564 -5.45119 175.29 6.5071 132.039C7.68452 127.78 12.2162 125.484 16.4183 126.849L172.392 177.528C176.594 178.893 178.893 183.406 177.528 187.608L126.849 343.582Z" fill="#F4A261" stroke="#151515" stroke-width="8" mask="url(#path-10-inside-10_1743_1128)" />
+              <path d="M16.4183 126.849C12.2163 125.484 9.89972 120.963 11.4503 116.825C23.8124 83.8421 45.6073 55.1498 74.1987 34.3769C102.79 13.6041 136.813 1.74234 172.002 0.177705C176.416 -0.0185543 180 3.58172 180 8L180 82C180 86.4183 176.411 89.9631 172.01 90.3553C155.843 91.7961 140.311 97.5895 127.099 107.188C113.888 116.787 103.578 129.768 97.2118 144.699C95.4789 148.764 90.9985 151.082 86.7965 149.716L16.4183 126.849Z" fill="#3372C7" stroke="#151515" stroke-width="8" mask="url(#path-11-inside-11_1743_1128)" />
+              <path id="path-holders" class="hide js-pathBig" d="M16.4183 126.849C12.2163 125.484 9.89972 120.963 11.4503 116.825C23.8124 83.8421 45.6073 55.1498 74.1987 34.3769C102.79 13.6041 136.813 1.74234 172.002 0.177705C176.416 -0.0185543 180 3.58172 180 8L180 168.989C180 174.424 174.697 178.277 169.528 176.597L16.4183 126.849Z" fill="#3372C7" stroke="#151515" stroke-width="8" mask="url(#path-12-inside-12_1743_1128)" />
+            </svg>
+          </div>
+        </div>
+      </section>
+      <section class="section referral" id="referral">
+        <div class="container">
+          <div class="referral-box">
+            <h2 class="referral__title">Referral programm</h2>
+            <p class="referral__text">
+              <b>Get up to 30% </b>in bonuses by inviting friends through your referral link
+            </p>
+            <a href="#">Share my link</a>
+          </div>
+        </div>
+      </section>
+      <section class="section blog" id="blog">
+        <div class="container">
+          <h2 class="section__title">Blog</h2>
+          <div class="title-lines">
+            <span> </span>
+            <span> </span>
+          </div>
+          <ul class="blog-list">
+            <li class="blog__item">
+              <h5 class="blog__title">News title</h5>
+              <time class="blog__date" datetime="2024-10-01T16:53+00:00">01.10.2024, 16:53</time>
+              <p class="blog__text">commodo lobortis, Ut dolor odio nibh lorem. sapien Donec scelerisque in tincidunt dui. ipsum Donec quis placerat urna. amet, ultrices commodo viverra quis ex</p>
+              <a class="blog__more" href="https://mirror.xyz/0x59016cC67791aaF73A80c88Ac5b83357Ee0EdE54/2VIEoOcPmjkKKzuFfEvVZcrK9llyEEjhHzn-4K9QhuA" target="_blank">More </a>
+            </li>
+            <li class="blog__item">
+              <h5 class="blog__title">News title</h5>
+              <time class="blog__date" datetime="2024-10-01T16:53+00:00">01.10.2024, 16:53</time>
+              <p class="blog__text">commodo lobortis, Ut dolor odio nibh lorem. sapien Donec scelerisque in tincidunt dui. ipsum Donec quis placerat urna. amet, ultrices commodo viverra quis ex</p>
+              <a class="blog__more" href="https://mirror.xyz/0x59016cC67791aaF73A80c88Ac5b83357Ee0EdE54/2VIEoOcPmjkKKzuFfEvVZcrK9llyEEjhHzn-4K9QhuA" target="_blank">More </a>
+            </li>
+            <li class="blog__item">
+              <h5 class="blog__title">News title</h5>
+              <time class="blog__date" datetime="2024-10-01T16:53+00:00">01.10.2024, 16:53</time>
+              <p class="blog__text">commodo lobortis, Ut dolor odio nibh lorem. sapien Donec scelerisque in tincidunt dui. ipsum Donec quis placerat urna. amet, ultrices commodo viverra quis ex</p>
+              <a class="blog__more" href="https://mirror.xyz/0x59016cC67791aaF73A80c88Ac5b83357Ee0EdE54/2VIEoOcPmjkKKzuFfEvVZcrK9llyEEjhHzn-4K9QhuA" target="_blank">More </a>
+            </li>
+          </ul>
+          <ul class="blog-link">See more news</ul>
+        </div>
+      </section>
+    </main>
+    <foooter class="footer">
+      <div class="container">
+        <div class="footer__row">
+          <div class="footer__dropdown js-dropdown">
+            <div class="footer__title footer__title--dropdown js-openDropdown">About</div>
+            <ul class="footer__links">
+              <li class="footer__link">
+                <a href="about.html">About us</a>
+              </li>
+              <li class="footer__link">
+                <a href="#">Terms of Service</a>
+              </li>
+              <li class="footer__link">
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li class="footer__link">
+                <a href="#">AML Policy</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__dropdown js-dropdown">
+            <div class="footer__title footer__title--dropdown js-openDropdown">Products</div>
+            <ul class="footer__links">
+              <li class="footer__link">
+                <a href="#">Trading App</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__dropdown js-dropdown">
+            <div class="footer__title footer__title--dropdown js-openDropdown">Docs</div>
+            <ul class="footer__links">
+              <li class="footer__link">
+                <a href="#">Blog</a>
+              </li>
+              <li class="footer__link">
+                <a href="#">Documentation</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__row">
+          <div class="footer__box">
+            <div class="footer__socials">
+              <div class="footer__title">Our community</div>
+              <ul class="footer__socials-list">
+                <li>
+                  <a class="footer__socials-item footer__socials-item--telegram" href="#" target="_blank"></a>
+                </li>
+                <li>
+                  <a class="footer__socials-item footer__socials-item--getgems" href="#" target="_blank"></a>
+                </li>
+                <li>
+                  <a class="footer__socials-item footer__socials-item--youtube" href="#" target="_blank"></a>
+                </li>
+                <li>
+                  <a class="footer__socials-item footer__socials-item--twitter" href="#" target="_blank"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__box">
+            <a class="footer__link" href="https://riwatex.com/" target="_blank">help@riwatex.com</a>
+            <div class="footer__copyright">© Copyright
+              <br> 2024 Riwatex. All Rights Reserved
+            </div>
+          </div>
+        </div>
+      </div>
+    </foooter>
+  </div>
+</body>
+
+</html>
